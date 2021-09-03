@@ -28,3 +28,5 @@ Now, once you start a fresh terminal session you should be able to invoke ```fix
 
 ## Notes
 * I am running Regolith Linux based on ubuntu 21.04 LTS dual booting with Windows 10, as much as I would like to say this should work for all linux distros I will warn that this is the only configuration I have tested this on and have no plans on testing it with other distros.
+
+* this tool will need to be re-run any time you add more games to your shared library and also requires that you install games only with windows, kinda crummy but hey, it works. This is due to the nature of the solution being to use symlinks to "trick" linux into thinking your game is stored locally allowing it to utilize all the linux-specific proton magics.
