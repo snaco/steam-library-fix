@@ -7,8 +7,12 @@ With proton in theory we should be able to install a Windows-only game once on o
 
 ## Pre-requisites:
 
+On Windows:
+* format a partition or drive to be exFAT
+* using steam install or move games to the exFAT partition
+
+On Linux:
 * python3 installed
-* an exFAT formatted partition or drive
 * the exFAT partition or drive is mounted with the following options: ```nosuid,nodev,nofail,x-gvfs-show,exec,uid=1000,gid=1000,umask=000```
 * proton is enabled in steam
 * add the following to your .bashrc replacing the paths with appropriate ones for your system:
