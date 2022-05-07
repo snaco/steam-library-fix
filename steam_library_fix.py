@@ -9,6 +9,8 @@ local_path = os.environ.get('STEAM_LOC_LIB')
 library_files = os.listdir(library_path)
 if not library_path.endswith('/'):
   library_path += '/'
+if not local_path.endswith('/'):
+  local_path += '/'
 library_games = os.listdir(f'{library_path}common/')
 library_compat_data = os.listdir(f'{library_path}compatdata/')
 library_acf_files = set(filter(lambda x: '.acf' in x, library_files))
